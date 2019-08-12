@@ -266,7 +266,7 @@ class Method
             $this->return = $returnValue;
 
             if ($tag->getType() === '$this') {
-                $tag->setType($this->root);
+                $tag->setType($this->root . '|static');
             }
         } else {
             $this->return = null;
